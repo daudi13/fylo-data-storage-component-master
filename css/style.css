@@ -46,57 +46,17 @@ a {
     padding: 2rem;
 }
 
-@media only screen and (min-width: 1440px) {
-    body {
-    background: url('/images/bg-desktop.png');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-color: var(--very-dark-blue);
-    }
-    .container {
-        width: 70%;
-        margin: auto;
-        flex-direction: row;
-        justify-content: center;
-        
-    }
 
-    .container-fylo {
-        flex-basis: 30%;
-    }
-
-    .container .container-space {
-        flex-basis: 50%;
-        margin-top: 70px;
-        margin-left: 20px;
-    }
-    .container-space .space__text {
-        text-align: justify!important;
-    }
-
-    .container-space .space__left {
-        top: 42%;
-        left: 65%;
-        padding: 15px;
-    }
-
-    .container-space .space__left::after {
-        content: '';
-        position: absolute;
-        top: 10;
-        right: 0;
-        width: 50%;
-        height:2rem;
-        clip-path: polygon(100% 0, 50% 0, 100% 100%);
-        background: white;
-    }
-}
 
 .container-fylo {
     width: 100%;
     padding: 2rem;
     background-color: var(--dark-blue);
     border-radius: 10px 90px 10px 10px;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 .logo {
@@ -203,4 +163,50 @@ h2 {
     font-size: 13px;
     color: var(--grayish-blue);
     padding-left: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+    background: url('/images/bg-desktop.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--very-dark-blue);
+    }
+    .container {
+        width: 70%;
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .container-fylo {
+        flex-basis: 30%;
+    }
+
+    .container .container-space {
+        flex-basis: 50%;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .container-space .space__text {
+        text-align: justify!important;
+    }
+
+    .container-space .space__left {
+        top: 42%;
+        left: 65%;
+        padding: 15px;
+    }
+
+    .container-space .space__left::after {
+        content: '';
+        position: absolute;
+        top: 10;
+        right: 0;
+        width: 50%;
+        height:2rem;
+        clip-path: polygon(100% 0, 50% 0, 100% 100%);
+        background: white;
+    }
 }
